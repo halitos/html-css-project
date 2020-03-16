@@ -1,4 +1,16 @@
-img[AttributesStyle] {
-  width: 970px;
-  height: 90px;
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #f1e285;
+}
+h1 {
+  text-align: center;
+}
+#banner_two {
+  padding-right: 20px;
+}
+#banner_one {
+  margin-top: 0px;
 }
