@@ -1,15 +1,14 @@
-header {
-  width: 100%;
-  display: flex;
+h1 {
   align-items: center;
-  height: 80px;
-  background-color: #f1e285;
+}
+body {
+  background-color: lightblue;
 }
 h1 {
   text-align: center;
 }
 #banner_two {
-  padding-right: 20px;
+  padding-left: 20px;
 }
 #banner_one {
   margin-top: 0px;
