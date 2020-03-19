@@ -1,17 +1,20 @@
 body {
   background-color: lightblue;
+  font-size: large;
 }
 body > p {
   text-align: center;
 }
-article {
+.intro {
   padding-top: 20px;
+  display: flex;
 }
 header {
   text-align: center;
   background-color: cadetblue;
   padding-bottom: 10px;
   padding-top: 10px;
+  height: auto;
 }
 header > h1 {
   font-size: 50px;
@@ -20,6 +23,22 @@ footer {
   text-align: center;
 }
 .boxed {
-  border: 1px solid rgb(41, 47, 65);
-  width: 600px;
+  border: 0em;
+  width: 800px;
+  height: 120px;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+.main {
+  padding-top: 30px;
+}
+.conclusion {
+  padding-top: 50px;
+}
+.boxed > p {
+  font-size: large;
+}
+.sub-heading {
+  text-align: center;
 }
