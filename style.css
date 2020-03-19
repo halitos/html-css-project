@@ -29,16 +29,34 @@ footer {
   margin-top: 100px;
   padding-left: 50px;
 }
-
-.main {
+.main > h1,
+.main > p {
   padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .conclusion {
-  padding-top: 50px;
+  padding-top: 150px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .boxed > p {
   font-size: large;
 }
 .sub-heading {
   text-align: center;
+}
+#title {
+  float: right;
+  padding-right: 30px;
+}
+h4,
+ul {
+  padding-left: 100px;
+}
+h3:first-child {
+  background-color: azure;
+}
+iframe {
+  padding-top: 30px;
 }
