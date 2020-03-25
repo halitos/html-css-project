@@ -1,6 +1,5 @@
 body {
   background-color: lightblue;
-  font-size: large;
 }
 body > p {
   text-align: center;
@@ -22,17 +21,27 @@ header > h1 {
 article {
   flex-shrink: 1;
 }
-.articles {
+.container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+.grid-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin-bottom: 2em;
 }
+.grid-second {
+  display: flex;
+  justify-content: space-around;
+}
 .sidebar {
-  order: 3;
+  font-size: large;
   height: 100%;
-  width: 30%;
-  background-color: rgb(207, 199, 231);
+  width: 25%;
+  background-color: rgb(154, 177, 199);
+  float: right;
+  margin-left: 20px;
 }
 footer {
   text-align: center;
@@ -46,6 +55,8 @@ ul {
 }
 ul li {
   list-style: none;
+  text-align: left;
+  padding-right: 30px;
 }
 .conclusion {
   text-align: center;
@@ -63,4 +74,12 @@ iframe {
 .boxed {
   border: 0px;
   width: 100%;
+}
+@media (max-width: 960px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    width: 100%;
+  }
 }
