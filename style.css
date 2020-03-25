@@ -6,7 +6,6 @@ body > p {
 }
 .intro {
   padding-top: 20px;
-  text-align: center;
 }
 header {
   text-align: center;
@@ -26,7 +25,7 @@ article {
   display: flex;
   flex-direction: row;
 }
-.grid-one {
+.grid-first {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -35,14 +34,13 @@ article {
 .grid-second {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .sidebar {
   font-size: large;
   height: 100%;
   width: 50%;
   background-color: rgb(154, 177, 199);
-  margin-left: 20px;
 }
 footer {
   text-align: center;
@@ -60,24 +58,27 @@ ul li {
   padding-right: 30px;
 }
 .conclusion {
-  text-align: center;
   padding-bottom: 50px;
-}
-.boxed > p {
-  font-size: large;
 }
 iframe {
   padding-top: 30px;
 }
-.boxed {
-  border: 0px;
-  width: 100%;
+#award {
+  margin-top: 20px;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .container {
     flex-wrap: wrap;
   }
   .sidebar {
     width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .grid-first {
+    flex-wrap: wrap;
+  }
+  .grid-second {
+    flex-wrap: wrap;
   }
 }
