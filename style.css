@@ -19,18 +19,22 @@ header {
 header > h1 {
   font-size: 50px;
 }
+.article {
+  width: 30%;
+}
 
 .articles {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2em;
 }
 .sidebar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: 100%;
-  width: 250px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  width: 10%;
   background-color: rgb(207, 199, 231);
 }
 footer {
