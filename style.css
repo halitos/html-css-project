@@ -19,11 +19,24 @@ header {
 header > h1 {
   font-size: 50px;
 }
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(207, 199, 231);
+}
 footer {
   text-align: center;
 }
 .mid {
-  padding-top: 30px;
   text-align: center;
 }
 ul {
@@ -31,27 +44,22 @@ ul {
   text-align: center;
 }
 li {
-  list-style-type: none;
-  position: relative;
-  right: 30px;
+  list-style: none;
 }
 .conclusion {
-  padding-top: 30px;
   text-align: center;
   padding-bottom: 50px;
 }
 .boxed > p {
   font-size: large;
 }
-.sub-heading {
-  text-align: center;
-}
-#title {
-  padding-right: 30px;
-}
 h3:first-child {
   background-color: azure;
 }
 iframe {
   padding-top: 30px;
+}
+.boxed {
+  border: 0px;
+  width: 100%;
 }
