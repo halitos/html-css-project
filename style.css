@@ -19,10 +19,9 @@ header {
 header > h1 {
   font-size: 50px;
 }
-.article {
-  width: 30%;
+article {
+  flex-shrink: 1;
 }
-
 .articles {
   display: flex;
   flex-direction: row;
@@ -30,11 +29,9 @@ header > h1 {
   margin-bottom: 2em;
 }
 .sidebar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  order: 3;
   height: 100%;
-  width: 10%;
+  width: 30%;
   background-color: rgb(207, 199, 231);
 }
 footer {
@@ -47,7 +44,7 @@ ul {
   display: inline-block;
   text-align: center;
 }
-li {
+ul li {
   list-style: none;
 }
 .conclusion {
