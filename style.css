@@ -39,8 +39,9 @@ article {
 .sidebar {
   font-size: large;
   height: 100%;
-  width: 50%;
+  width: 80%;
   background-color: rgb(154, 177, 199);
+  padding: 0 1em;
 }
 footer {
   text-align: center;
