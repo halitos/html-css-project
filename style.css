@@ -17,7 +17,7 @@ header {
 header > h1 {
   font-size: 50px;
 }
-article {
+/* article {
   flex-shrink: 1;
   margin-right: 20px;
 }
@@ -66,7 +66,7 @@ iframe {
 }
 #award {
   margin-top: 20px;
-}
+}*/
 @media (max-width: 900px) {
   .container {
     flex-wrap: wrap;
@@ -82,4 +82,53 @@ iframe {
   .grid-second {
     flex-wrap: wrap;
   }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px 10px;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.two {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.three {
+  grid-column-start: 3;
+  grid-column-end: auto;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.four {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: auto;
+}
+
+.five {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: auto;
+}
+
+.six {
+  grid-column-start: 3;
+  grid-column-end: auto;
+  grid-row-start: 2;
+  grid-row-end: auto;
 }
