@@ -4,6 +4,7 @@ body {
 body {
   text-align: center;
   margin: auto;
+  padding: 1rem;
 }
 header {
   text-align: center;
@@ -40,23 +41,6 @@ iframe {
 #award {
   margin-top: 20px;
 }
-/* @media (max-width: 900px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .sidebar {
-    width: 100%;
-  }
-}
-@media (max-width: 650px) {
-  .grid-first {
-    flex-wrap: wrap;
-  }
-  .grid-second {
-    flex-wrap: wrap;
-  }
-} */
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -109,4 +93,20 @@ iframe {
   grid-column-end: auto;
   grid-row-start: 2;
   grid-row-end: auto;
+}
+.article {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 600px) {
+  .article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .article {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
