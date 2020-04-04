@@ -1,12 +1,11 @@
 body {
   background-color: lightblue;
 }
-body > p {
-  text-align: center;
-}
+
 .intro {
   padding-top: 20px;
 }
+
 header {
   text-align: center;
   background-color: cadetblue;
@@ -14,28 +13,27 @@ header {
   padding-top: 10px;
   height: auto;
 }
-header > h1 {
+header h1 {
   font-size: 50px;
 }
+
 article {
-  flex-shrink: 1;
-  margin-right: 20px;
+  width: 30%;
+  margin: 1em;
 }
+
 .container {
   display: flex;
   flex-direction: row;
 }
-.grid-first {
+.main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 2em;
+  flex-wrap: wrap;
 }
-.grid-second {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+
 .sidebar {
   font-size: large;
   height: 100%;
@@ -46,19 +44,20 @@ article {
 footer {
   text-align: center;
 }
-.mid {
+.two {
   text-align: center;
 }
 ul {
   display: inline-block;
   text-align: center;
+  padding-inline-start: 0px;
 }
 ul li {
   list-style: none;
   text-align: left;
-  padding-right: 30px;
+  margin-right: 30px;
 }
-.conclusion {
+.six {
   padding-bottom: 50px;
 }
 iframe {
@@ -67,7 +66,7 @@ iframe {
 #award {
   margin-top: 20px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
   .container {
     flex-wrap: wrap;
   }
@@ -75,11 +74,13 @@ iframe {
     width: 100%;
   }
 }
-@media (max-width: 650px) {
-  .grid-first {
-    flex-wrap: wrap;
+@media (max-width: 960px) {
+  article {
+    width: 45%;
   }
-  .grid-second {
-    flex-wrap: wrap;
+}
+@media (max-width: 650px) {
+  article {
+    width: 90%;
   }
 }
