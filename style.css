@@ -22,7 +22,6 @@ header h1 {
 }
 
 article {
-  margin-left: 20px;
   margin-bottom: 10px;
 }
 .sidebar {
@@ -71,6 +70,5 @@ iframe {
 @media (max-width: 1200px) {
   .main {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
