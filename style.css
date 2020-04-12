@@ -1,8 +1,5 @@
 body {
-  background-color: lightblue;
-}
-body {
-  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
   margin: auto;
   padding: 1rem;
 }
@@ -11,10 +8,9 @@ body {
 }
 header {
   text-align: center;
-  background-color: cadetblue;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  height: auto;
+  background-color: rgb(100, 210, 255);
+  padding: 1rem;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 header h1 {
@@ -24,19 +20,21 @@ header h1 {
 article {
   margin-bottom: 10px;
 }
+
+h2:first-child {
+  text-align: center;
+}
 .sidebar {
   font-size: large;
   height: 100%;
   width: 80%;
-  background-color: rgb(154, 177, 199);
+  background-color: #d0dbe9;
   padding: 0 1em;
   margin-left: 10px;
   order: 1;
   text-align: left;
 }
-footer {
-  text-align: center;
-}
+
 ul {
   display: inline-block;
   text-align: center;
@@ -44,7 +42,7 @@ ul {
 ul li {
   list-style: none;
   text-align: left;
-  padding-right: 30px;
+  text-indent: -2.5em;
 }
 iframe {
   padding-top: 30px;
@@ -57,6 +55,12 @@ iframe {
   display: grid;
   grid-gap: 1.2rem;
 }
+
+.footer {
+  text-align: center;
+  padding: 0.5em;
+}
+
 @media (min-width: 780px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -70,5 +74,6 @@ iframe {
 @media (max-width: 1200px) {
   .main {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
